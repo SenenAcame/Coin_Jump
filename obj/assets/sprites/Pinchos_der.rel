@@ -1,0 +1,23 @@
+XL2
+H 9 areas 2 global symbols
+M Pinchos_der
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 2A flags 0 addr 0
+S _sp_spikes_rig Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 00 00 40 00 40 C4 40 C4 D8 C4 D8 F0 40 D0
+R 00 00 00 00
+T 0E 00 F0 00 40 D0 00 00 40 00 00 40 00 40 D0 40
+R 00 00 00 00
+T 1C 00 D0 E4 C4 D8 F0 40 D0 E4 00 40 C4 00 00 40
+R 00 00 00 00

@@ -1,0 +1,40 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |     SP_COIN_=  000A     |     SP_COIN_=  0005 
+    SP_PLAYE=  0008     |     SP_PLAYE=  0004     |     SP_SPIKE=  0006 
+    SP_SPIKE=  000E     |     SP_SPIKE=  0003     |     SP_SPIKE=  000E 
+    SP_SPIKE=  0003     |     SP_SPIKE=  0006     |     SP_SPIKE=  0007 
+    SP_SPIKE=  0007     |     _end       **** GX  |     _end_H  =  0019 
+    _end_SIZ=  01F4     |     _end_W  =  0014     |     _global_   **** GX
+    _intro     **** GX  |     _intro_H=  0019     |     _intro_S=  01F4 
+    _intro_W=  0014     |     _level0    **** GX  |     _level0_=  0019 
+    _level0_   **** GX  |     _level0_=  0019     |     _level0_=  01F4 
+    _level0_=  0014     |     _level0_=  01F4     |     _level0_=  0014 
+    _level1    **** GX  |     _level1_=  0019     |     _level1_   **** GX
+    _level1_=  0019     |     _level1_=  01F4     |     _level1_=  0014 
+    _level1_=  01F4     |     _level1_=  0014     |     _level2    **** GX
+    _level2_=  0019     |     _level2_=  01F4     |     _level2_=  0014 
+    _level3    **** GX  |     _level3_=  0019     |     _level3_=  01F4 
+    _level3_=  0014     |     _level_M   **** GX  |     _level_M=  0019 
+    _level_M=  01F4     |     _level_M=  0014     |     _level_S   **** GX
+    _level_S=  0019     |     _level_S=  01F4     |     _level_S=  0014 
+    _level_T   **** GX  |     _level_T=  0019     |     _level_T=  01F4 
+    _level_T=  0014     |     _level_r   **** GX  |     _level_r=  0019 
+    _level_r=  01F4     |     _level_r=  0014     |     _sp_coin   **** GX
+    _sp_coin   **** GX  |     _sp_coin   **** GX  |     _sp_coin   **** GX
+    _sp_play   **** GX  |     _sp_play   **** GX  |     _sp_play   **** GX
+    _sp_play   **** GX  |     _sp_play   **** GX  |     _sp_play   **** GX
+    _sp_play   **** GX  |     _sp_spik   **** GX  |     _sp_spik   **** GX
+    _sp_spik   **** GX  |     _sp_spik   **** GX  |     _tiles_0   **** GX
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size    0   flags    0
+
