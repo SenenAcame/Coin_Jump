@@ -1,0 +1,505 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           cpct_strings
+     00000000  l__CABS                         
+     00000000  l__DABS                         
+     00000000  l__DATA                         
+     00000000  l__GSFINAL                      
+     00000000  l__GSINIT                       
+     00000000  l__HOME                         
+     00000000  l__INITIALIZED                  
+     00000000  l__INITIALIZER                  
+     00000000  l___instrument                  
+     00000000  l___musica                      
+     00000000  l___my_font                     
+     00000000  s__CABS                         
+     00000000  s__DABS                         
+     00000000  s___instrument                  
+     00000000  s___instrument0                 
+     00000000  s___musica                      
+     00000000  s___musica0                     
+     00000000  s___my_font                     
+     00000000  s___my_font0                    
+     0000004E  l___instrument0                 
+     00000095  l___musica0                     
+     00000200  l___my_font0                    
+     00000335  s__CODE                         
+     00003940  l__CODE                         
+     00003C75  s__DATA                         
+     00003C75  s__GSFINAL                      
+     00003C75  s__GSINIT                       
+     00003C75  s__HOME                         
+     00003C75  s__INITIALIZED                  
+     00003C75  s__INITIALIZER                  
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000335  _tiles_00                          Tiles_suelo8x8
+     00000355  _tiles_01                          Tiles_suelo8x8
+     00000375  _tiles_02                          Tiles_suelo8x8
+     00000395  _tiles_03                          Tiles_suelo8x8
+     000003B5  _tiles_04                          Tiles_suelo8x8
+     000003D5  _tiles_05                          Tiles_suelo8x8
+     000003F5  _tiles_06                          Tiles_suelo8x8
+     00000415  _tiles_07                          Tiles_suelo8x8
+     00000435  _tiles_08                          Tiles_suelo8x8
+     00000455  _tiles_09                          Tiles_suelo8x8
+     00000475  _tiles_10                          Tiles_suelo8x8
+     00000495  _tiles_11                          Tiles_suelo8x8
+     000004B5  _tiles_12                          Tiles_suelo8x8
+     000004D5  _tiles_13                          Tiles_suelo8x8
+     000004F5  _tiles_14                          Tiles_suelo8x8
+     00000515  _tiles_15                          Tiles_suelo8x8
+     00000535  _tiles_16                          Tiles_suelo8x8
+     00000555  _tiles_17                          Tiles_suelo8x8
+     00000575  _tiles_18                          Tiles_suelo8x8
+     00000595  _tiles_19                          Tiles_suelo8x8
+     000005B5  _tiles_20                          Tiles_suelo8x8
+     000005D5  _tiles_21                          Tiles_suelo8x8
+     000005F5  _tiles_22                          Tiles_suelo8x8
+     00000615  _tiles_23                          Tiles_suelo8x8
+     00000635  _tiles_24                          Tiles_suelo8x8
+     00000655  _tiles_25                          Tiles_suelo8x8
+     00000675  _tiles_26                          Tiles_suelo8x8
+     00000695  _tiles_27                          Tiles_suelo8x8
+     000006B5  _tiles_28                          Tiles_suelo8x8
+     000006D5  _tiles_29                          Tiles_suelo8x8
+     000006F5  _tiles_30                          Tiles_suelo8x8
+     00000715  _tiles_31                          Tiles_suelo8x8
+     00000735  _tiles_32                          Tiles_suelo8x8
+     00000755  _tiles_33                          Tiles_suelo8x8
+     00000775  _tiles_34                          Tiles_suelo8x8
+     00000795  _tiles_35                          Tiles_suelo8x8
+     000007B5  _tiles_36                          Tiles_suelo8x8
+     000007D5  _tiles_37                          Tiles_suelo8x8
+     000007F5  _tiles_38                          Tiles_suelo8x8
+     00000815  _tiles_39                          Tiles_suelo8x8
+     00000835  _tiles_40                          Tiles_suelo8x8
+     00000855  _tiles_41                          Tiles_suelo8x8
+     00000875  _tiles_42                          Tiles_suelo8x8
+     00000895  _tiles_43                          Tiles_suelo8x8
+     000008B5  _tiles_44                          Tiles_suelo8x8
+     000008D5  _tiles_45                          Tiles_suelo8x8
+     000008F5  _tiles_46                          Tiles_suelo8x8
+     00000915  _tiles_47                          Tiles_suelo8x8
+     00000935  _tiles_48                          Tiles_suelo8x8
+     00000955  _tiles_49                          Tiles_suelo8x8
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000975  _tiles_50                          Tiles_suelo8x8
+     00000995  _tiles_51                          Tiles_suelo8x8
+     000009B5  _tiles_52                          Tiles_suelo8x8
+     000009D5  _tiles_53                          Tiles_suelo8x8
+     000009F5  _tiles_54                          Tiles_suelo8x8
+     00000A15  _tiles_55                          Tiles_suelo8x8
+     00000A35  _tiles_56                          Tiles_suelo8x8
+     00000A55  _tiles_57                          Tiles_suelo8x8
+     00000A75  _tiles_58                          Tiles_suelo8x8
+     00000A95  _tiles_59                          Tiles_suelo8x8
+     00000AB5  _tiles_60                          Tiles_suelo8x8
+     00000AD5  _tiles_61                          Tiles_suelo8x8
+     00000AF5  _tiles_62                          Tiles_suelo8x8
+     00000B15  _tiles_63                          Tiles_suelo8x8
+     00000B35  _tiles_64                          Tiles_suelo8x8
+     00000B55  _tiles_65                          Tiles_suelo8x8
+     00000B75  _tiles_66                          Tiles_suelo8x8
+     00000B95  _tiles_67                          Tiles_suelo8x8
+     00000BB5  _tiles_68                          Tiles_suelo8x8
+     00000BD5  _tiles_69                          Tiles_suelo8x8
+     00000BF5  _tiles_70                          Tiles_suelo8x8
+     00000C15  _tiles_71                          Tiles_suelo8x8
+     00000C35  _tiles_72                          Tiles_suelo8x8
+     00000C55  _tiles_73                          Tiles_suelo8x8
+     00000C75  _tiles_74                          Tiles_suelo8x8
+     00000C95  _tiles_75                          Tiles_suelo8x8
+     00000CB5  _tiles_76                          Tiles_suelo8x8
+     00000CD5  _tiles_77                          Tiles_suelo8x8
+     00000CF5  _tiles_78                          Tiles_suelo8x8
+     00000D15  _tiles_79                          Tiles_suelo8x8
+     00000D35  _sp_coin_0                         Animacion_moneda
+     00000D67  _sp_coin_1                         Animacion_moneda
+     00000D99  _sp_coin_2                         Animacion_moneda
+     00000DCB  _sp_coin_3                         Animacion_moneda
+     00000DFD  _sp_spikes_lef                     Pinchos_izq
+     00000E27  _sp_spikes_rig                     Pinchos_der
+     00000E51  _sp_spikes_up                      Pinchos_arr
+     00000E7B  _sp_spikes                         Pinchos
+     00000EA5  _sp_player_0                       Animacion_player
+     00000EC5  _sp_player_1                       Animacion_player
+     00000EE5  _sp_player_2                       Animacion_player
+     00000F05  _sp_player_3                       Animacion_player
+     00000F25  _sp_player_4                       Animacion_player
+     00000F45  _sp_player_5                       Animacion_player
+     00000F65  _sp_player_6                       Animacion_player
+     00000F85  _global_pal                        global_pal
+     00000F95  _end                               
+     00001189  _level_Tomateixon                  
+     0000137D  _level_rnd_project22               
+     00001571  _level_Spicyboat_Studio            
+     00001765  _level1_Ianixaa                    
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00001959  _level0_Ianixaa                    
+     00001B4D  _level_MT_Studios_UA               
+     00001D41  _level3                            
+     00001F35  _level2                            
+     00002129  _level1                            
+     0000231D  _level0                            
+     00002511  _intro                             
+     00002709  _main                              cpct_keyboard
+     00002720  player_walking                     
+     00002754  player_jumping                     
+     0000278C  spikes_anim                        
+     00002792  spikes_up_anim                     
+     00002798  spikes_rig_anim                    
+     0000279E  spikes_lef_anim                    
+     000027A4  coin_anim                          
+     000027C0  animationsys_getSprite             
+     000027CF  animationsys_playerJump            
+     000027D6  animationsys_playerWalk            
+     000027EB  animationsys_setSprite             
+     0000280B  colision_update                    
+     00002902  calcula_pos                        
+     000029BE  inpunt_keyboard                    cpct_keyboard
+     00002A7D  musicsys_init                      
+     00002A8A  musicsys_update                    
+     00002A8E  musicsys_jump                      
+     00002A99  musicsys_death                     
+     00002AA4  musicsys_coin                      
+     00002AE5  physicsys_update                   
+     00002AF6  rendersys_init                     cpct_keyboard
+     00002B33  rendersys_update                   cpct_keyboard
+     00002B67  rendersys_tilemap                  cpct_keyboard
+     00002B8F  rendersys_drawStringIntro          cpct_keyboard
+     00002B9F  _myDrawCharInner                   cpct_strings
+     00002C06  dc_2pxtableM0                      cpct_strings
+     00002C0A  _myDrawStringM0                    cpct_strings
+     00002C1E  _num_entities                      
+     00002C1F  _last_elem_ptr                     
+     00002C21  _entity_array                      
+     00002CC6  entityman_getIX_A                  
+     00002CCD  entityman_getEntityArray_IX        
+     00002CD2  entityman_getNumEntities_A         
+     00002CF5  entityman_create_mulitple          
+     00002D0B  entityman_forall                   
+     00002D12  post_func                          
+     00002D1D  entityman_destroy_entities         
+     00002D28  player_4_184                       
+     00002D33  player_4_32                        
+     00002D3E  spikes_7_186                       
+     00002D49  spikes_14_186                      
+     00002D54  spikes_19_186                      
+     00002D5F  spikes_31_186                      
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00002D6A  spikes_39_186                      
+     00002D75  spikes_49_186                      
+     00002D80  spikes_50_186                      
+     00002D8B  spikes_59_186                      
+     00002D96  spikes_56_186                      
+     00002DA1  spikes_69_186                      
+     00002DAC  spikes_32_178                      
+     00002DB7  spikes_41_178                      
+     00002DC2  spikes_12_170                      
+     00002DCD  spikes_20_170                      
+     00002DD8  spikes_28_170                      
+     00002DE3  spikes_12_130                      
+     00002DEE  spikes_61_130                      
+     00002DF9  spikes_36_122                      
+     00002E04  spikes_25_90                       
+     00002E0F  spikes_47_90                       
+     00002E1A  spikes_36_50                       
+     00002E25  spikes_16_42                       
+     00002E30  spikes_up_37_144                   
+     00002E3B  spikes_up_37_72                    
+     00002E46  spikes_rig_21_140                  
+     00002E51  spikes_rig_33_130                  
+     00002E5C  spikes_rig_13_113                  
+     00002E67  spikes_rig_21_102                  
+     00002E72  spikes_rig_33_58                   
+     00002E7D  spikes_rig_21_52                   
+     00002E88  spikes_rig_13_33                   
+     00002E93  spikes_rig_37_27                   
+     00002E9E  spikes_rig_21_9                    
+     00002EA9  spikes_lef_12_153                  
+     00002EB4  spikes_lef_12_138                  
+     00002EBF  spikes_lef_44_128                  
+     00002ECA  spikes_lef_12_90                   
+     00002ED5  spikes_lef_12_73                   
+     00002EE0  spikes_lef_44_56                   
+     00002EEB  spikes_lef_12_42                   
+     00002EF6  coin_70_180                        
+     00002F01  coin_70_170                        
+     00002F0C  coin_68_156                        
+     00002F17  coin_67_68                         
+     00002F22  coin_16_60                         
+     00002F2D  coin_4_51                          
+     00002F38  coin_44_27                         
+     00002FCF  lvl0                               
+     00002FD4  lvl1                               
+     00002FD9  lvl2                               
+     00002FDE  lvl3                               
+     00002FE3  lvl4                               
+     00002FE8  lvl_MT_Studios_UA                  
+     00002FED  lvl1_Ianixaa                       
+     00002FF2  lvl_Tomateixon                     
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00002FF7  lvl_Spicyboat_Studio               
+     00002FFC  lvl_rnd_project22                  
+     00003001  last_lvl                           
+     0000308E  gameman_init                       
+     00003098  gameman_check_end                  
+     000030C4  gameman_restart_level              
+     000030E1  gameman_get_map                    
+     000030E9  gameman_get_string                 
+     0000312B  comprueba_intro                    
+     00003157  gameman_set_entities               
+     00003168  _cpct_isKeyPressed                 cpct_keyboard
+     00003168  cpct_isKeyPressed_asm              cpct_keyboard
+     00003174  cpct_setPalette_asm                cpct_video
+     00003187  cpct_setPALColour_asm              cpct_video
+     00003191  _cpct_akp_digidrumStatus           cpct_audio
+     00003192  _cpct_akp_songLoopTimes            cpct_audio
+     00003193  _cpct_akp_musicPlay                cpct_audio
+     00003193  cpct_akp_musicPlay_asm             cpct_audio
+     00003896  _cpct_akp_musicInit                cpct_audio
+     0000389D  cpct_akp_musicInit_asm             cpct_audio
+     000038F6  _cpct_akp_stop                     cpct_audio
+     000038F6  cpct_akp_stop_asm                  cpct_audio
+     00003909  _cpct_akp_SFXGetInstrument         cpct_audio
+     0000390E  cpct_akp_SFXGetInstrument_asm      cpct_audio
+     00003922  _cpct_akp_SFXInit                  cpct_audio
+     00003929  cpct_akp_SFXInit_asm               cpct_audio
+     00003930  _cpct_akp_SFXStopAll               cpct_audio
+     00003930  cpct_akp_SFXStopAll_asm            cpct_audio
+     0000393D  _cpct_akp_SFXPlay                  cpct_audio
+     0000394F  cpct_akp_SFXPlay_asm               cpct_audio
+     0000399C  _cpct_akp_SFXStop                  cpct_audio
+     000039A1  cpct_akp_SFXStop_asm               cpct_audio
+     000039BA  cpct_drawSprite_asm                cpct_sprites
+     00003A5A  cpct_etm_drawTilemap4x8_ag_asm     cpct_easytilemaps
+     00003A5C  cpct_etm_dtm4x8_ag_asm_widthHeig   cpct_easytilemaps
+     00003A72  cpct_etm_dtm4x8_ag_asm_tilesetPt   cpct_easytilemaps
+     00003ADD  cpct_etm_dtm4x8_ag_asm_restoreI    cpct_easytilemaps
+     00003AE3  cpct_etm_dtm4x8_ag_asm_increment   cpct_easytilemaps
+     00003AE8  cpct_etm_dtm4x8_ag_asm_restoreWi   cpct_easytilemaps
+     00003AEB  cpct_etm_dtm4x8_ag_asm_updateWid   cpct_easytilemaps
+     00003AF3  _cpct_keyboardStatusBuffer         cpct_keyboard
+     00003AFD  _cpct_isAnyKeyPressed              cpct_keyboard
+     00003AFD  cpct_isAnyKeyPressed_asm           cpct_keyboard
+     00003B0A  _cpct_waitVSYNC                    cpct_video
+     00003B0A  cpct_waitVSYNC_asm                 cpct_video
+     00003B12  cpct_setVideoMode_asm              cpct_video
+     00003B1F  _cpct_disableFirmware              cpct_firmware
+     00003B1F  _cpct_removeInterruptHandler       cpct_firmware
+     00003B1F  cpct_disableFirmware_asm           cpct_firmware
+     00003B1F  cpct_removeInterruptHandler_asm    cpct_firmware
+     00003B2F  cpct_drawSolidBox_asm              cpct_sprites
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00000335    00003940 =       14656. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00003BD2  _cpct_mode_rom_status              cpct_firmware
+     00003BD3  cpct_setDrawCharM0_asm             cpct_strings
+     00003BF6  cpct_getScreenPtr_asm              cpct_video
+     00003C08  _cpct_scanKeyboard                 cpct_keyboard
+     00003C08  cpct_scanKeyboard_asm              cpct_keyboard
+     00003C39  cpct_etm_setDrawTilemap4x8_ag_as   cpct_easytilemaps
+     00003C65  dc_mode0_ct                        cpct_strings
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+__instrument0                       00000000    0000004E =          78. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000002E5  _instrument                        
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+__musica0                           00000000    00000095 =         149. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000250  _musica                            
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+__my_font0                          00000000    00000200 =         512. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000004C  _font                              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+
+Files Linked                              [ module(s) ]
+
+obj/assets/sprites/Tiles_suelo8x8.rel     [ Tiles_suelo8x8 ]
+obj/assets/sprites/Animacion_moneda.rel   [ Animacion_moneda ]
+obj/assets/sprites/Pinchos_izq.rel        [ Pinchos_izq ]
+obj/assets/sprites/Pinchos_der.rel        [ Pinchos_der ]
+obj/assets/sprites/Pinchos_arr.rel        [ Pinchos_arr ]
+obj/assets/sprites/Pinchos.rel            [ Pinchos ]
+obj/assets/sprites/Animacion_player.rel   [ Animacion_player ]
+obj/assets/sprites/global_pal.rel         [ global_pal ]
+obj/assets/music/Instrument.h.rel         [  ]
+obj/assets/music/Instrument.rel           [  ]
+obj/assets/music/Musica.h.rel             [  ]
+obj/assets/music/Musica.rel               [  ]
+obj/assets/maps/fin.h.rel                 [  ]
+obj/assets/maps/fin.rel                   [  ]
+obj/assets/maps/mapa_@Tomateixon.h.rel    [  ]
+obj/assets/maps/mapa_@Tomateixon.rel      [  ]
+obj/assets/maps/mapa_@rnd_project22.h.rel
+                                          [  ]
+obj/assets/maps/mapa_@rnd_project22.rel   [  ]
+obj/assets/maps/mapa_@Spicyboat_Studio.h.rel
+                                          [  ]
+obj/assets/maps/mapa_@Spicyboat_Studio.rel
+                                          [  ]
+obj/assets/maps/mapa1_@Ianixaa.h.rel      [  ]
+obj/assets/maps/mapa1_@Ianixaa.rel        [  ]
+obj/assets/maps/mapa0_@Ianixaa.h.rel      [  ]
+obj/assets/maps/mapa0_@Ianixaa.rel        [  ]
+obj/assets/maps/mapa_@MT_Studios_UA.h.rel
+                                          [  ]
+obj/assets/maps/mapa_@MT_Studios_UA.rel   [  ]
+obj/assets/maps/mapa_03.h.rel             [  ]
+obj/assets/maps/mapa_03.rel               [  ]
+obj/assets/maps/mapa_02.h.rel             [  ]
+obj/assets/maps/mapa_02.rel               [  ]
+obj/assets/maps/mapa_01.h.rel             [  ]
+obj/assets/maps/mapa_01.rel               [  ]
+obj/assets/maps/mapa_00.h.rel             [  ]
+obj/assets/maps/mapa_00.rel               [  ]
+obj/assets/maps/intro.h.rel               [  ]
+obj/assets/maps/intro.rel                 [  ]
+obj/cpctelera_functions.h.rel             [  ]
+obj/main.h.rel                            [ cpct_keyboard ]
+obj/main.rel                              [ cpct_keyboard ]
+obj/sys/animation_system.h.rel            [  ]
+obj/sys/animation_system.rel              [  ]
+obj/sys/colision_system.h.rel             [  ]
+obj/sys/colision_system.rel               [  ]
+obj/sys/input_controls.h.rel              [  ]
+obj/sys/input_controls.rel                [ cpct_keyboard ]
+obj/sys/music_system.h.rel                [  ]
+obj/sys/music_system.rel                  [  ]
+obj/sys/physics_system.h.rel              [  ]
+obj/sys/physics_system.rel                [  ]
+obj/sys/render_system.h.rel               [  ]
+obj/sys/render_system.rel                 [ cpct_keyboard ]
+obj/cpct/cpct_drawCharM0_inner.rel        [ cpct_strings ]
+obj/cpct/cpct_drawStringM0.rel            [ cpct_strings ]
+obj/assets/assets.h.rel                   [  ]
+obj/assets/fonts.rel                      [  ]
+obj/man/entity_manager.h.rel              [  ]
+obj/man/entity_manager.rel                [  ]
+obj/man/game_manager.h.rel                [  ]
+obj/man/game_manager.rel                  [  ]
+
+
+Libraries Linked                          [ object file ]
+
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_isKeyPressed.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPalette_asmbindings.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPALColour_asmbindings.re ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ arkostracker.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawSprite_asmbindings.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_etm_drawTilemap4x8_ag_asmbi ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ keyboard.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_isAnyKeyPressed.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_waitVSYNC.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setVideoMode_asmbindings.re ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_removeInterruptHandler.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_drawSolidBox_asmbindings.re ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpc_mode_rom_status.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setDrawCharM0_asmbindings.r ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getScreenPtr_asmbindings.re ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_scanKeyboard.rel ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_etm_setDrawTilemap4x8_ag_as ]
+/home/cpc/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_dc_mode0_ct.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+
+User Base Address Definitions
+
+_CODE = 0x0335
+_DATA = 0x0000
+
+

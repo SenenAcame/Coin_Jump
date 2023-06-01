@@ -1,0 +1,70 @@
+-mjwx
+-i obj/Coin_Jump.ihx
+-b _CODE = 0x0335
+-b _DATA = 0x0000
+-u
+-k /home/cpc/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/bin/../share/sdcc/lib/z80
+-k /home/cpc/cpctelera/cpctelera/tools/sdcc-3.6.8-r9946/share/sdcc/lib/z80
+-l /home/cpc/cpctelera/cpctelera/cpctelera.lib
+-l z80
+obj/assets/sprites/Tiles_suelo8x8.rel
+obj/assets/sprites/Animacion_moneda.rel
+obj/assets/sprites/Pinchos_izq.rel
+obj/assets/sprites/Pinchos_der.rel
+obj/assets/sprites/Pinchos_arr.rel
+obj/assets/sprites/Pinchos.rel
+obj/assets/sprites/Animacion_player.rel
+obj/assets/sprites/global_pal.rel
+obj/assets/music/Instrument.h.rel
+obj/assets/music/Instrument.rel
+obj/assets/music/Musica.h.rel
+obj/assets/music/Musica.rel
+obj/assets/maps/fin.h.rel
+obj/assets/maps/fin.rel
+obj/assets/maps/mapa_@Tomateixon.h.rel
+obj/assets/maps/mapa_@Tomateixon.rel
+obj/assets/maps/mapa_@rnd_project22.h.rel
+obj/assets/maps/mapa_@rnd_project22.rel
+obj/assets/maps/mapa_@Spicyboat_Studio.h.rel
+obj/assets/maps/mapa_@Spicyboat_Studio.rel
+obj/assets/maps/mapa1_@Ianixaa.h.rel
+obj/assets/maps/mapa1_@Ianixaa.rel
+obj/assets/maps/mapa0_@Ianixaa.h.rel
+obj/assets/maps/mapa0_@Ianixaa.rel
+obj/assets/maps/mapa_@MT_Studios_UA.h.rel
+obj/assets/maps/mapa_@MT_Studios_UA.rel
+obj/assets/maps/mapa_03.h.rel
+obj/assets/maps/mapa_03.rel
+obj/assets/maps/mapa_02.h.rel
+obj/assets/maps/mapa_02.rel
+obj/assets/maps/mapa_01.h.rel
+obj/assets/maps/mapa_01.rel
+obj/assets/maps/mapa_00.h.rel
+obj/assets/maps/mapa_00.rel
+obj/assets/maps/intro.h.rel
+obj/assets/maps/intro.rel
+obj/cpctelera_functions.h.rel
+obj/main.h.rel
+obj/main.rel
+obj/sys/animation_system.h.rel
+obj/sys/animation_system.rel
+obj/sys/colision_system.h.rel
+obj/sys/colision_system.rel
+obj/sys/input_controls.h.rel
+obj/sys/input_controls.rel
+obj/sys/music_system.h.rel
+obj/sys/music_system.rel
+obj/sys/physics_system.h.rel
+obj/sys/physics_system.rel
+obj/sys/render_system.h.rel
+obj/sys/render_system.rel
+obj/cpct/cpct_drawCharM0_inner.rel
+obj/cpct/cpct_drawStringM0.rel
+obj/assets/assets.h.rel
+obj/assets/fonts.rel
+obj/man/entity_manager.h.rel
+obj/man/entity_manager.rel
+obj/man/game_manager.h.rel
+obj/man/game_manager.rel
+
+-e

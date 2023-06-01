@@ -1,0 +1,46 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+
+
+                              1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                              2 ;;    Coin Jump: a videogame developed for Amstrad CPC 464.                            ;;
+                              3 ;;    Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja             ;;
+                              4 ;;                                                                                     ;;
+                              5 ;;    This program is free software: you can redistribute it and/or modify             ;;
+                              6 ;;    it under the terms of the GNU General Public License as published by             ;;
+                              7 ;;    the Free Software Foundation, either version 3 of the License, or                ;;
+                              8 ;;    (at your option) any later version.                                              ;;
+                              9 ;;                                                                                     ;;
+                             10 ;;    This program is distributed in the hope that it will be useful,                  ;;
+                             11 ;;    but WITHOUT ANY WARRANTY; without even the implied warranty of                   ;;
+                             12 ;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                    ;;
+                             13 ;;    GNU General Public License for more details.                                     ;;
+                             14 ;;                                                                                     ;;
+                             15 ;;    You should have received a copy of the GNU General Public License                ;;
+                             16 ;;    along with this program.  If not, see <http://www.gnu.org/licenses/>.            ;;
+                             17 ;;                                                                                     ;;
+                             18 ;;    Coin Jump  Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja  ;;
+                             19 ;;                                                                                     ;;
+                             20 ;;    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.       ;;
+                             21 ;;    This is free software, and you are welcome to redistribute it                    ;;
+                             22 ;;    under certain conditions; type `show c' for details.                             ;;
+                             23 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             24 
+                             25 ;;  Funciones
+                             26 .globl cpct_disableFirmware_asm
+                             27 .globl cpct_getScreenPtr_asm
+                             28 .globl cpct_drawSolidBox_asm
+                             29 .globl cpct_waitVSYNC_asm
+                             30 .globl cpct_scanKeyboard_asm
+                             31 .globl cpct_isAnyKeyPressed_asm
+                             32 .globl cpct_isKeyPressed_asm
+                             33 .globl cpct_etm_setDrawTilemap4x8_ag_asm
+                             34 .globl cpct_etm_drawTilemap4x8_ag_asm
+                             35 .globl cpct_setVideoMode_asm
+                             36 .globl cpct_setPalette_asm
+                             37 .globl cpct_drawSprite_asm
+                             38 .globl cpct_akp_musicInit_asm
+                             39 .globl cpct_akp_musicPlay_asm
+                             40 .globl cpct_akp_SFXInit_asm
+                             41 .globl cpct_akp_SFXPlay_asm
