@@ -1,0 +1,108 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |   0 Ianixaa_   0411 R   |   0 MTStudio   041B R
+  0 RndProje   0425 R   |     SP_COIN_=  000A     |     SP_COIN_=  0005 
+    SP_PLAYE=  0008     |     SP_PLAYE=  0004     |     SP_SPIKE=  0006 
+    SP_SPIKE=  000E     |     SP_SPIKE=  0003     |     SP_SPIKE=  000E 
+    SP_SPIKE=  0003     |     SP_SPIKE=  0006     |     SP_SPIKE=  0007 
+    SP_SPIKE=  0007     |   0 Spicyboa   0420 R   |   0 Tomateix   0416 R
+  0 _actual_   02DE R   |     _end       **** GX  |     _end_H  =  0019 
+    _end_SIZ=  01F4     |     _end_W  =  0014     |   0 _ents_la   0293 R
+  0 _ents_lv   021B R   |   0 _ents_lv   021F R   |   0 _ents_lv   0251 R
+  0 _ents_lv   0225 R   |   0 _ents_lv   0231 R   |   0 _ents_lv   0245 R
+  0 _ents_lv   025D R   |   0 _ents_lv   0287 R   |   0 _ents_lv   0271 R
+    _global_   **** GX  |     _instrum   **** GX  |     _intro     **** GX
+    _intro_H=  0019     |     _intro_S=  01F4     |     _intro_W=  0014 
+  0 _last_le   02E0 R   |     _level0    **** GX  |     _level0_=  0019 
+    _level0_   **** GX  |     _level0_=  0019     |     _level0_=  01F4 
+    _level0_=  0014     |     _level0_=  01F4     |     _level0_=  0014 
+    _level1    **** GX  |     _level1_=  0019     |     _level1_   **** GX
+    _level1_=  0019     |     _level1_=  01F4     |     _level1_=  0014 
+    _level1_=  01F4     |     _level1_=  0014     |     _level2    **** GX
+    _level2_=  0019     |     _level2_=  01F4     |     _level2_=  0014 
+    _level3    **** GX  |     _level3_=  0019     |     _level3_=  01F4 
+    _level3_=  0014     |     _level_M   **** GX  |     _level_M=  0019 
+    _level_M=  01F4     |     _level_M=  0014     |     _level_S   **** GX
+    _level_S=  0019     |     _level_S=  01F4     |     _level_S=  0014 
+    _level_T   **** GX  |     _level_T=  0019     |     _level_T=  01F4 
+    _level_T=  0014     |     _level_r   **** GX  |     _level_r=  0019 
+    _level_r=  01F4     |     _level_r=  0014     |   0 _levels    02E2 R
+    _musica    **** GX  |     _myDrawS   **** GX  |     _sp_coin   **** GX
+    _sp_coin   **** GX  |     _sp_coin   **** GX  |     _sp_coin   **** GX
+    _sp_play   **** GX  |     _sp_play   **** GX  |     _sp_play   **** GX
+    _sp_play   **** GX  |     _sp_play   **** GX  |     _sp_play   **** GX
+    _sp_play   **** GX  |     _sp_spik   **** GX  |     _sp_spik   **** GX
+    _sp_spik   **** GX  |     _sp_spik   **** GX  |   0 _string_   0307 R
+  0 _string_   02F8 R   |   0 _string_   0310 R   |   0 _string_   033C R
+  0 _string_   033D R   |   0 _string_   0321 R   |   0 _string_   0330 R
+    _tiles_0   **** GX  |     animatio   **** GX  |     animatio   **** GX
+    animatio   **** GX  |     animatio   **** GX  |   0 coin_16_   01FA GR
+  0 coin_44_   0210 GR  |   0 coin_4_5   0205 GR  |   0 coin_67_   01EF GR
+  0 coin_68_   01E4 GR  |   0 coin_70_   01D9 GR  |   0 coin_70_   01CE GR
+    coin_ani   **** GX  |   0 comprueb   03E0 R   |   0 comprueb   03D8 R
+  0 comprueb   03F8 R   |   0 comprueb   03F0 R   |   0 comprueb   03E8 R
+  0 comprueb   0403 GR  |     cpct_akp   **** GX  |     cpct_akp   **** GX
+    cpct_akp   **** GX  |     cpct_akp   **** GX  |     cpct_dis   **** GX
+    cpct_dra   **** GX  |     cpct_dra   **** GX  |     cpct_etm   **** GX
+    cpct_etm   **** GX  |     cpct_get   **** GX  |     cpct_isA   **** GX
+    cpct_isK   **** GX  |     cpct_sca   **** GX  |     cpct_set   **** GX
+    cpct_set   **** GX  |     cpct_set   **** GX  |     cpct_wai   **** GX
+    e_a     =  0008     |     e_h     =  0003     |     e_sp    =  0006 
+    e_type  =  000A     |     e_va    =  0009     |     e_vx    =  0004 
+    e_vy    =  0005     |     e_w     =  0002     |     e_x     =  0000 
+    e_y     =  0001     |     entityma   **** GX  |     entityma   **** GX
+    entityma   **** GX  |     entityma   **** GX  |     entityma   **** GX
+    entityma   **** GX  |   0 gameman_   03A0 R   |   0 gameman_   0370 GR
+  0 gameman_   03B2 R   |   0 gameman_   03B9 GR  |   0 gameman_   03C1 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+  0 gameman_   0366 GR  |   0 gameman_   03A8 R   |   0 gameman_   0382 R
+  0 gameman_   0392 R   |   0 gameman_   039C GR  |   0 gameman_   042F GR
+    instrume=  02E5     |     instrume=  0332     |     instrume=  004E 
+  0 intro_ma   042A R   |     l_ents  =  0003     |     l_map   =  0000 
+    l_num   =  0002     |   0 last_lvl   02D9 GR  |     left_cha=  0064 
+  0 lvl0       02A7 GR  |   0 lvl1       02AC GR  |   0 lvl1_Ian   02C5 GR
+    lvl1_Ian=  000C     |   0 lvl2       02B1 GR  |   0 lvl3       02B6 GR
+  0 lvl4       02BB GR  |     lvl_MTSt=  000A     |   0 lvl_MT_S   02C0 GR
+  0 lvl_Spic   02CF GR  |     lvl_Spic=  0010     |   0 lvl_Toma   02CA GR
+    lvl_Toma=  000E     |   0 lvl_rnd_   02D4 GR  |     lvl_rnd_=  0012 
+    lvl_size=  0005     |     max_enti=  000F     |     musica_a=  0250 
+    musica_e=  02E4     |     musica_s=  0095     |     musicsys   **** GX
+    musicsys   **** GX  |     musicsys   **** GX  |     musicsys   **** GX
+    musicsys   **** GX  |   0 player_4   0000 GR  |   0 player_4   000B GR
+    player_j   **** GX  |     player_w   **** GX  |     post_fun   **** GX
+  0 procedim   03CF R   |     rendersy   **** GX  |     rendersy   **** GX
+    rendersy   **** GX  |   0 restart_   037E R   |   0 return_s   03C7 R
+    rig_chan=  0001     |     size_pal=  0010     |     size_win=  1914 
+    sizeof_e=  000B     |   0 spikes_1   00BB GR  |   0 spikes_1   009A GR
+  0 spikes_1   0021 GR  |   0 spikes_1   00FD GR  |   0 spikes_1   002C GR
+  0 spikes_2   00A5 GR  |   0 spikes_2   00DC GR  |   0 spikes_2   00B0 GR
+  0 spikes_3   0037 GR  |   0 spikes_3   0084 GR  |   0 spikes_3   00D1 GR
+  0 spikes_3   00F2 GR  |   0 spikes_3   0042 GR  |   0 spikes_4   008F GR
+  0 spikes_4   00E7 GR  |   0 spikes_4   004D GR  |   0 spikes_5   0058 GR
+  0 spikes_5   006E GR  |   0 spikes_5   0063 GR  |   0 spikes_6   00C6 GR
+  0 spikes_6   0079 GR  |   0 spikes_7   0016 GR  |     spikes_a   **** GX
+  0 spikes_l   018C GR  |   0 spikes_l   0181 GR  |   0 spikes_l   01C3 GR
+  0 spikes_l   01AD GR  |   0 spikes_l   01A2 GR  |   0 spikes_l   0197 GR
+  0 spikes_l   01B8 GR  |     spikes_l   **** GX  |   0 spikes_r   0134 GR
+  0 spikes_r   0160 GR  |   0 spikes_r   013F GR  |   0 spikes_r   011E GR
+  0 spikes_r   0155 GR  |   0 spikes_r   0176 GR  |   0 spikes_r   0129 GR
+  0 spikes_r   014A GR  |   0 spikes_r   016B GR  |     spikes_r   **** GX
+  0 spikes_u   0108 GR  |   0 spikes_u   0113 GR  |     spikes_u   **** GX
+    tone_coi=  003C     |     tone_dea=  0014     |     tone_jum=  0028 
+    width_ma=  0014 
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 3.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size  440   flags    0
+

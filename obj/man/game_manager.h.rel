@@ -1,0 +1,11 @@
+XL2
+H 1 areas 8 global symbols
+S gameman_set_entities Ref0000
+S comprueba_intro Ref0000
+S gameman_check_end Ref0000
+S gameman_get_map Ref0000
+S .__.ABS. Def0000
+S gameman_init Ref0000
+S gameman_get_string Ref0000
+S gameman_restart_level Ref0000
+A _CODE size 0 flags 0 addr 0

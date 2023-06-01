@@ -1,0 +1,20 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0000 L   |     comprueb   **** GX  |     gameman_   **** GX
+    gameman_   **** GX  |     gameman_   **** GX  |     gameman_   **** GX
+    gameman_   **** GX  |     gameman_   **** GX  |     l_ents  =  0003 
+    l_map   =  0000     |     l_num   =  0002     |     lvl1_Ian=  000C 
+    lvl_MTSt=  000A     |     lvl_Spic=  0010     |     lvl_Toma=  000E 
+    lvl_rnd_=  0012     |     lvl_size=  0005 
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+Area Table
+
+   0 _CODE      size    0   flags    0
+

@@ -1,0 +1,11 @@
+XL2
+H 1 areas 8 global symbols
+S entityman_destroy_entities Ref0000
+S entityman_getNumEntities_A Ref0000
+S post_func Ref0000
+S .__.ABS. Def0000
+S entityman_getEntityArray_IX Ref0000
+S entityman_create_mulitple Ref0000
+S entityman_forall Ref0000
+S entityman_getIX_A Ref0000
+A _CODE size 0 flags 0 addr 0
