@@ -1,0 +1,15 @@
+XL2
+H 1 areas C global symbols
+S animationsys_setSprite Ref0000
+S spikes_anim Ref0000
+S spikes_up_anim Ref0000
+S player_walking Ref0000
+S animationsys_playerWalk Ref0000
+S .__.ABS. Def0000
+S player_jumping Ref0000
+S animationsys_playerJump Ref0000
+S spikes_lef_anim Ref0000
+S coin_anim Ref0000
+S spikes_rig_anim Ref0000
+S animationsys_getSprite Ref0000
+A _CODE size 0 flags 0 addr 0

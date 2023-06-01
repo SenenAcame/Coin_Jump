@@ -1,0 +1,663 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+Hexadecimal [16-Bits]
+
+
+
+                              1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                              2 ;;    Coin Jump: a videogame developed for Amstrad CPC 464.                            ;;
+                              3 ;;    Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja             ;;
+                              4 ;;                                                                                     ;;
+                              5 ;;    This program is free software: you can redistribute it and/or modify             ;;
+                              6 ;;    it under the terms of the GNU General Public License as published by             ;;
+                              7 ;;    the Free Software Foundation, either version 3 of the License, or                ;;
+                              8 ;;    (at your option) any later version.                                              ;;
+                              9 ;;                                                                                     ;;
+                             10 ;;    This program is distributed in the hope that it will be useful,                  ;;
+                             11 ;;    but WITHOUT ANY WARRANTY; without even the implied warranty of                   ;;
+                             12 ;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                    ;;
+                             13 ;;    GNU General Public License for more details.                                     ;;
+                             14 ;;                                                                                     ;;
+                             15 ;;    You should have received a copy of the GNU General Public License                ;;
+                             16 ;;    along with this program.  If not, see <http://www.gnu.org/licenses/>.            ;;
+                             17 ;;                                                                                     ;;
+                             18 ;;    Coin Jump  Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja  ;;
+                             19 ;;                                                                                     ;;
+                             20 ;;    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.       ;;
+                             21 ;;    This is free software, and you are welcome to redistribute it                    ;;
+                             22 ;;    under certain conditions; type `show c' for details.                             ;;
+                             23 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             24 
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+Hexadecimal [16-Bits]
+
+
+
+                             25 .include "assets/assets.h.s"
+                              1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                              2 ;;    Coin Jump: a videogame developed for Amstrad CPC 464.                            ;;
+                              3 ;;    Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja             ;;
+                              4 ;;                                                                                     ;;
+                              5 ;;    This program is free software: you can redistribute it and/or modify             ;;
+                              6 ;;    it under the terms of the GNU General Public License as published by             ;;
+                              7 ;;    the Free Software Foundation, either version 3 of the License, or                ;;
+                              8 ;;    (at your option) any later version.                                              ;;
+                              9 ;;                                                                                     ;;
+                             10 ;;    This program is distributed in the hope that it will be useful,                  ;;
+                             11 ;;    but WITHOUT ANY WARRANTY; without even the implied warranty of                   ;;
+                             12 ;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                    ;;
+                             13 ;;    GNU General Public License for more details.                                     ;;
+                             14 ;;                                                                                     ;;
+                             15 ;;    You should have received a copy of the GNU General Public License                ;;
+                             16 ;;    along with this program.  If not, see <http://www.gnu.org/licenses/>.            ;;
+                             17 ;;                                                                                     ;;
+                             18 ;;    Coin Jump  Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja  ;;
+                             19 ;;                                                                                     ;;
+                             20 ;;    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.       ;;
+                             21 ;;    This is free software, and you are welcome to redistribute it                    ;;
+                             22 ;;    under certain conditions; type `show c' for details.                             ;;
+                             23 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             24 
+                             25 ;;  Includes
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 3.
+Hexadecimal [16-Bits]
+
+
+
+                             26 .include "assets/maps/intro.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/intro.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:13 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _intro_W = 20
+                     0019    12 _intro_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _intro
+                     01F4    18 _intro_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 4.
+Hexadecimal [16-Bits]
+
+
+
+                             27 .include "assets/maps/mapa_00.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_00.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:13 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level0_W = 20
+                     0019    12 _level0_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level0
+                     01F4    18 _level0_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 5.
+Hexadecimal [16-Bits]
+
+
+
+                             28 .include "assets/maps/mapa_01.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_01.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:13 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level1_W = 20
+                     0019    12 _level1_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level1
+                     01F4    18 _level1_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 6.
+Hexadecimal [16-Bits]
+
+
+
+                             29 .include "assets/maps/mapa_02.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_02.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:12 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level2_W = 20
+                     0019    12 _level2_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level2
+                     01F4    18 _level2_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 7.
+Hexadecimal [16-Bits]
+
+
+
+                             30 .include "assets/maps/mapa_03.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_03.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:12 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level3_W = 20
+                     0019    12 _level3_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level3
+                     01F4    18 _level3_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 8.
+Hexadecimal [16-Bits]
+
+
+
+                             31 .include "assets/maps/mapa_@MT_Studios_UA.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_@MT_Studios_UA.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:12 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level_MT_Studios_UA_W = 20
+                     0019    12 _level_MT_Studios_UA_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level_MT_Studios_UA
+                     01F4    18 _level_MT_Studios_UA_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 9.
+Hexadecimal [16-Bits]
+
+
+
+                             32 .include "assets/maps/mapa0_@Ianixaa.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa0_@Ianixaa.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:11 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level0_Ianixaa_W = 20
+                     0019    12 _level0_Ianixaa_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level0_Ianixaa
+                     01F4    18 _level0_Ianixaa_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 10.
+Hexadecimal [16-Bits]
+
+
+
+                             33 .include "assets/maps/mapa1_@Ianixaa.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa1_@Ianixaa.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:11 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level1_Ianixaa_W = 20
+                     0019    12 _level1_Ianixaa_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level1_Ianixaa
+                     01F4    18 _level1_Ianixaa_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 11.
+Hexadecimal [16-Bits]
+
+
+
+                             34 .include "assets/maps/mapa_@Spicyboat_Studio.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_@Spicyboat_Studio.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:11 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level_Spicyboat_Studio_W = 20
+                     0019    12 _level_Spicyboat_Studio_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level_Spicyboat_Studio
+                     01F4    18 _level_Spicyboat_Studio_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 12.
+Hexadecimal [16-Bits]
+
+
+
+                             35 .include "assets/maps/mapa_@rnd_project22.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_@rnd_project22.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:10 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level_rnd_project22_W = 20
+                     0019    12 _level_rnd_project22_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level_rnd_project22
+                     01F4    18 _level_rnd_project22_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 13.
+Hexadecimal [16-Bits]
+
+
+
+                             36 .include "assets/maps/mapa_@Tomateixon.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/mapa_@Tomateixon.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:09 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _level_Tomateixon_W = 20
+                     0019    12 _level_Tomateixon_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _level_Tomateixon
+                     01F4    18 _level_Tomateixon_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 14.
+Hexadecimal [16-Bits]
+
+
+
+                             37 .include "assets/maps/fin.h.s"
+                              1 ;;
+                              2 ;; File assets/maps/fin.tmx converted to csv using cpct_tmx2data [Sat Jan 28 11:50:09 2023]
+                              3 ;;   * Visible Layers:  1
+                              4 ;;   * Layer Width:     20
+                              5 ;;   * Layer Height:    25
+                              6 ;;   * Bits per tile:   8
+                              7 ;;   * Layer Bytes:     500 (20 x 25 items, 8 bits per item)
+                              8 ;;   * Total Bytes:     500 (500 x 1, bytes per layer times layers)
+                              9 ;;
+                             10 ;;#### Width and height constants ####
+                     0014    11 _end_W = 20
+                     0019    12 _end_H = 25
+                             13 
+                             14 ;;#### Converted layer tilemaps ####
+                             15 ;;   Visible layers: 1
+                             16 ;;
+                             17 .globl _end
+                     01F4    18 _end_SIZE = 500
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 15.
+Hexadecimal [16-Bits]
+
+
+
+                             38 
+                             39 ;;  Direcciones globales
+                             40 .globl _tiles_00
+                             41 .globl _global_pal
+                             42 .globl _sp_player_0
+                             43 .globl _sp_player_1
+                             44 .globl _sp_player_2
+                             45 .globl _sp_player_3
+                             46 .globl _sp_player_4
+                             47 .globl _sp_player_5
+                             48 .globl _sp_player_6
+                             49 .globl _sp_spikes
+                             50 .globl _sp_spikes_up
+                             51 .globl _sp_spikes_rig
+                             52 .globl _sp_spikes_lef
+                             53 .globl _sp_coin_0
+                             54 .globl _sp_coin_1
+                             55 .globl _sp_coin_2
+                             56 .globl _sp_coin_3
+                             57 ;.globl _sp_cannon_0
+                             58 ;.globl _sp_cannon_1
+                             59 ;.globl _sp_cannon_2
+                             60 ;.globl _sp_cannon_ball
+                             61 ;.globl _sp_laser_0
+                             62 ;.globl _sp_laser_1
+                             63 
+                             64 ;;  Constantes
+                     0004    65 SP_PLAYER_0_W = 4
+                     0008    66 SP_PLAYER_0_H = 8
+                     0007    67 SP_SPIKES_W = 7
+                     0006    68 SP_SPIKES_H = 6
+                     0007    69 SP_SPIKES_UP_W = 7
+                     0006    70 SP_SPIKES_UP_H = 6
+                     0003    71 SP_SPIKES_RIG_W = 3
+                     000E    72 SP_SPIKES_RIG_H = 14
+                     0003    73 SP_SPIKES_LEF_W = 3
+                     000E    74 SP_SPIKES_LEF_H = 14
+                     0005    75 SP_COIN_0_W = 5
+                     000A    76 SP_COIN_0_H = 10
+                             77 ;SP_CANNON_0_W = 4
+                             78 ;SP_CANNON_0_H = 6
+                             79 ;SP_CANNON_BALL_W = 2
+                             80 ;SP_CANNON_BALL_H = 4
+                             81 ;SP_LASER_0_W = 4
+                             82 ;SP_LASER_0_H = 6
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 16.
+Hexadecimal [16-Bits]
+
+
+
+                             26 .include "man/entity_manager.h.s"
+                              1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                              2 ;;    Coin Jump: a videogame developed for Amstrad CPC 464.                            ;;
+                              3 ;;    Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja             ;;
+                              4 ;;                                                                                     ;;
+                              5 ;;    This program is free software: you can redistribute it and/or modify             ;;
+                              6 ;;    it under the terms of the GNU General Public License as published by             ;;
+                              7 ;;    the Free Software Foundation, either version 3 of the License, or                ;;
+                              8 ;;    (at your option) any later version.                                              ;;
+                              9 ;;                                                                                     ;;
+                             10 ;;    This program is distributed in the hope that it will be useful,                  ;;
+                             11 ;;    but WITHOUT ANY WARRANTY; without even the implied warranty of                   ;;
+                             12 ;;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                    ;;
+                             13 ;;    GNU General Public License for more details.                                     ;;
+                             14 ;;                                                                                     ;;
+                             15 ;;    You should have received a copy of the GNU General Public License                ;;
+                             16 ;;    along with this program.  If not, see <http://www.gnu.org/licenses/>.            ;;
+                             17 ;;                                                                                     ;;
+                             18 ;;    Coin Jump  Copyright (C) 2022  Senén Martínez Acame & Sergio Tortajada Santonja  ;;
+                             19 ;;                                                                                     ;;
+                             20 ;;    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.       ;;
+                             21 ;;    This is free software, and you are welcome to redistribute it                    ;;
+                             22 ;;    under certain conditions; type `show c' for details.                             ;;
+                             23 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                             24 
+                             25 ;;  Funciones
+                             26 .globl entityman_getEntityArray_IX
+                             27 .globl entityman_getNumEntities_A
+                             28 .globl entityman_getIX_A
+                             29 .globl entityman_forall
+                             30 .globl post_func
+                             31 .globl entityman_create_mulitple
+                             32 .globl entityman_destroy_entities
+                             33 
+                             34 ;;  Macros
+                             35 .macro DefineEntity _name _x, _y, _w, _h, _vx, _vy, _sp, _a, _va, _type
+                             36 _name::
+                             37    .db   _x
+                             38    .db   _y
+                             39    .db   _w
+                             40    .db   _h
+                             41    .db   _vx
+                             42    .db   _vy
+                             43    .dw   _sp
+                             44    .db   _a
+                             45    .db   _va
+                             46    .db   _type
+                             47 .endm
+                             48 
+                             49 ;;  Constantes
+                     000F    50 max_entities = 15
+                     0000    51 e_x      = 0
+                     0001    52 e_y      = 1
+                     0002    53 e_w      = 2
+                     0003    54 e_h      = 3
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 17.
+Hexadecimal [16-Bits]
+
+
+
+                     0004    55 e_vx     = 4
+                     0005    56 e_vy     = 5
+                     0006    57 e_sp     = 6
+                     0008    58 e_a      = 8
+                     0009    59 e_va     = 9
+                     000A    60 e_type   = 10
+                     000B    61 sizeof_e = 11
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 18.
+Hexadecimal [16-Bits]
+
+
+
+                             27 
+   0000                      28 player_walking::
+   0000 00 00                29     .dw _sp_player_0
+   0002 00 00                30     .dw _sp_player_0
+   0004 00 00                31     .dw _sp_player_0
+   0006 00 00                32     .dw _sp_player_1
+   0008 00 00                33     .dw _sp_player_1
+   000A 00 00                34     .dw _sp_player_1
+   000C 00 00                35     .dw _sp_player_2
+   000E 00 00                36     .dw _sp_player_2
+   0010 00 00                37     .dw _sp_player_2
+   0012 00 00                38     .dw _sp_player_1
+   0014 00 00                39     .dw _sp_player_1
+   0016 00 00                40     .dw _sp_player_1
+   0018 00 00                41     .dw _sp_player_0
+   001A 00 00                42     .dw _sp_player_0
+   001C 00 00                43     .dw _sp_player_0
+   001E 00 00                44     .dw _sp_player_3
+   0020 00 00                45     .dw _sp_player_3
+   0022 00 00                46     .dw _sp_player_3
+   0024 00 00                47     .dw _sp_player_4
+   0026 00 00                48     .dw _sp_player_4
+   0028 00 00                49     .dw _sp_player_4
+   002A 00 00                50     .dw _sp_player_3
+   002C 00 00                51     .dw _sp_player_3
+   002E 00 00                52     .dw _sp_player_3
+   0030 00 00                53     .dw 0x0000
+   0032 00 00                54     .dw player_walking
+                             55 
+   0034                      56 player_jumping::
+   0034 00 00                57     .dw _sp_player_0
+   0036 00 00                58     .dw _sp_player_0
+   0038 00 00                59     .dw _sp_player_5
+   003A 00 00                60     .dw _sp_player_5
+   003C 00 00                61     .dw _sp_player_5
+   003E 00 00                62     .dw _sp_player_5
+   0040 00 00                63     .dw _sp_player_5
+   0042 00 00                64     .dw _sp_player_5
+   0044 00 00                65     .dw _sp_player_5
+   0046 00 00                66     .dw _sp_player_5
+   0048 00 00                67     .dw _sp_player_6
+   004A 00 00                68     .dw _sp_player_6
+   004C 00 00                69     .dw _sp_player_6
+   004E 00 00                70     .dw _sp_player_6
+   0050 00 00                71     .dw _sp_player_6
+   0052 00 00                72     .dw _sp_player_6
+   0054 00 00                73     .dw _sp_player_6
+   0056 00 00                74     .dw _sp_player_6
+   0058 00 00                75     .dw _sp_player_6
+   005A 00 00                76     .dw _sp_player_6
+   005C 00 00                77     .dw _sp_player_6
+   005E 00 00                78     .dw _sp_player_6
+   0060 00 00                79     .dw _sp_player_6
+   0062 00 00                80     .dw _sp_player_6
+   0064 00 00                81     .dw _sp_player_6
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 19.
+Hexadecimal [16-Bits]
+
+
+
+   0066 00 00                82     .dw _sp_player_6
+   0068 00 00                83     .dw 0x0000
+   006A 34 00                84     .dw player_jumping
+                             85 
+   006C                      86 spikes_anim::
+   006C 00 00                87     .dw _sp_spikes
+   006E 00 00                88     .dw 0x0000
+   0070 6C 00                89     .dw spikes_anim
+                             90 
+   0072                      91 spikes_up_anim::
+   0072 00 00                92     .dw _sp_spikes_up
+   0074 00 00                93     .dw 0x0000
+   0076 72 00                94     .dw spikes_up_anim
+                             95 
+   0078                      96 spikes_rig_anim::
+   0078 00 00                97     .dw _sp_spikes_rig
+   007A 00 00                98     .dw 0x0000
+   007C 78 00                99     .dw spikes_rig_anim
+                            100 
+   007E                     101 spikes_lef_anim::
+   007E 00 00               102     .dw _sp_spikes_lef
+   0080 00 00               103     .dw 0x0000
+   0082 7E 00               104     .dw spikes_lef_anim
+                            105 
+   0084                     106 coin_anim::
+   0084 00 00               107     .dw _sp_coin_0
+   0086 00 00               108     .dw _sp_coin_0
+   0088 00 00               109     .dw _sp_coin_1
+   008A 00 00               110     .dw _sp_coin_1
+   008C 00 00               111     .dw _sp_coin_2
+   008E 00 00               112     .dw _sp_coin_2
+   0090 00 00               113     .dw _sp_coin_3
+   0092 00 00               114     .dw _sp_coin_3
+   0094 00 00               115     .dw _sp_coin_2
+   0096 00 00               116     .dw _sp_coin_2
+   0098 00 00               117     .dw _sp_coin_1
+   009A 00 00               118     .dw _sp_coin_1
+   009C 00 00               119     .dw 0x0000
+   009E 84 00               120     .dw coin_anim
+                            121 
+                            122 ;cannon_anim::
+                            123 ;    .dw _sp_cannon_0
+                            124 ;    .dw _sp_cannon_0
+                            125 ;    .dw _sp_cannon_1
+                            126 ;    .dw _sp_cannon_1
+                            127 ;    .dw _sp_cannon_2
+                            128 ;    .dw _sp_cannon_2
+                            129 ;    .dw 0x0000
+                            130 ;    .dw cannon_anim
+                            131 ;
+                            132 ;cannon_ball_anim::
+                            133 ;    .dw _sp_cannon_ball
+                            134 ;    .dw 0x0000
+                            135 ;    .dw cannon_ball_anim
+                            136 ;
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 20.
+Hexadecimal [16-Bits]
+
+
+
+                            137 ;laser_anim::
+                            138 ;    .dw _sp_laser_0
+                            139 ;    .dw _sp_laser_0
+                            140 ;    .dw _sp_laser_0
+                            141 ;    .dw _sp_laser_1
+                            142 ;    .dw _sp_laser_1
+                            143 ;    .dw _sp_laser_1
+                            144 ;    .dw 0x0000
+                            145 ;    .dw laser_anim
+                            146 ;
+   00A0                     147 animationsys_getSprite::
+   00A0 DD 6E 06      [19]  148     ld      l,      e_sp(ix)        ;;  Puntero a la animacion (byte bajo)
+   00A3 DD 23         [10]  149     inc     ix                      ;;  Incrementar IX
+   00A5 DD 66 06      [19]  150     ld      h,      e_sp(ix)        ;;  Puntero a la animacion (byte alto)
+   00A8 DD 2B         [10]  151     dec     ix                      ;;  Decrementar IX
+                            152 
+   00AA 5E            [ 7]  153     ld      e,      (hl)            ;;  Sprite (byte bajo)
+   00AB 23            [ 6]  154     inc     hl                      ;;  Incrementar HL
+   00AC 56            [ 7]  155     ld      d,      (hl)            ;;  Sprite (byte alto)
+   00AD 23            [ 6]  156     inc     hl                      ;;  Incrementar HL
+   00AE C9            [10]  157 ret
+                            158 
+   00AF                     159 animationsys_playerJump::
+   00AF 21 34 00      [10]  160     ld      hl,         #player_jumping     ;;  Animacion de saltar (HL)
+   00B2 CD BD 00      [17]  161     call    animationsys_changeAnimation    ;;  Cambia la animacion del player
+   00B5 C9            [10]  162 ret
+                            163 
+   00B6                     164 animationsys_playerWalk::
+   00B6 21 00 00      [10]  165     ld      hl,         #player_walking     ;;  Animacion de caminar (HL)
+   00B9 CD BD 00      [17]  166     call    animationsys_changeAnimation    ;;  Cambia la animacion del player
+   00BC C9            [10]  167 ret
+                            168 
+   00BD                     169 animationsys_changeAnimation:
+   00BD CD 00 00      [17]  170     call    entityman_getEntityArray_IX     ;;  Obtiene array de entidades
+   00C0 DD 75 06      [19]  171     ld      e_sp(ix),   l                   ;;  Byte bajo de animacion
+   00C3 DD 23         [10]  172     inc     ix                              ;;  Incrementa IX
+   00C5 DD 74 06      [19]  173     ld      e_sp(ix),   h                   ;;  Byte alto animacion
+   00C8 DD 2B         [10]  174     dec     ix                              ;;  Decrementa IX
+   00CA C9            [10]  175 ret
+                            176 
+                            177 ;;  Input
+                            178 ;;  DE = Posicion del sprite
+   00CB                     179 animationsys_setSprite::
+   00CB 7A            [ 4]  180     ld      a,d                     ;;  Guardo D en A
+   00CC B7            [ 4]  181     or      a                       ;;  Comparo si A==0
+   00CD 28 0B         [12]  182     jr      z,      reset           ;;  Si lo es, resetea la animacion (DE==00 00)
+                            183 
+   00CF DD 75 06      [19]  184     ld      e_sp(ix),   l           ;;  Si no, guarda byte bajo del siguiente sprite
+   00D2 DD 23         [10]  185     inc     ix                      ;;  Incremento IX
+   00D4 DD 74 06      [19]  186     ld      e_sp(ix),   h           ;;  Guarda byte alto del siguiente sprite
+   00D7 DD 2B         [10]  187     dec     ix                      ;;  Decremento IX
+   00D9 C9            [10]  188 ret
+                            189 
+   00DA                     190 reset:
+   00DA 46            [ 7]  191     ld      b,          (hl)        ;;  Byte bajo de puntero a animacion a B
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 21.
+Hexadecimal [16-Bits]
+
+
+
+   00DB DD 70 06      [19]  192     ld      e_sp(ix),   b           ;;  Para guardarlo en e_sp(IX)
+   00DE 23            [ 6]  193     inc     hl                      ;;  Incremento HL
+   00DF DD 23         [10]  194     inc     ix                      ;;  Incremento IX
+   00E1 4E            [ 7]  195     ld      c,          (hl)        ;;  Byte alto de puntero a animacion a C
+   00E2 DD 71 06      [19]  196     ld      e_sp(ix),   c           ;;  Para guardarlo en e_sp(IX)
+   00E5 DD 2B         [10]  197     dec     ix                      ;;  Decremento IX
+   00E7 CD A0 00      [17]  198     call    animationsys_getSprite  ;;  Obtengo el sprite actual
+   00EA C9            [10]  199 ret

@@ -1,0 +1,128 @@
+XL2
+H 1 areas 4E global symbols
+M cpct_keyboard
+S _sp_player_3 Ref0000
+S animationsys_setSprite Ref0000
+S _sp_player_4 Ref0000
+S _level0_Ianixaa Ref0000
+S _sp_player_5 Ref0000
+S _level1_Ianixaa Ref0000
+S _sp_player_6 Ref0000
+S cpct_setPalette_asm Ref0000
+S cpct_isKeyPressed_asm Ref0000
+S gameman_set_entities Ref0000
+S cpct_setPALColour_asm Ref0000
+S entityman_destroy_entities Ref0000
+S _sp_spikes_lef Ref0000
+S _myDrawStringM0 Ref0000
+S comprueba_intro Ref0000
+S gameman_check_end Ref0000
+S cpct_akp_SFXInit_asm Ref0000
+S _intro Ref0000
+S cpct_akp_SFXPlay_asm Ref0000
+S entityman_getNumEntities_A Ref0000
+S cpct_drawSprite_asm Ref0000
+S post_func Ref0000
+S _sp_spikes_rig Ref0000
+S gameman_get_map Ref0000
+S spikes_anim Ref0000
+S cpct_etm_drawTilemap4x8_ag_asm Ref0000
+S _level_rnd_project22 Ref0000
+S _end Ref0000
+S spikes_up_anim Ref0000
+S player_walking Ref0000
+S _sp_coin_0 Ref0000
+S animationsys_playerWalk Ref0000
+S _sp_coin_1 Ref0000
+S _sp_coin_2 Ref0000
+S _level_Spicyboat_Studio Ref0000
+S _sp_coin_3 Ref0000
+S .__.ABS. Def0000
+S player_jumping Ref0000
+S animationsys_playerJump Ref0000
+S _level0 Ref0000
+S _level1 Ref0000
+S spikes_lef_anim Ref0000
+S gameman_init Ref0000
+S _level2 Ref0000
+S _level3 Ref0000
+S gameman_get_string Ref0000
+S _global_pal Ref0000
+S cpct_isAnyKeyPressed_asm Ref0000
+S coin_anim Ref0000
+S _sp_spikes Ref0000
+S gameman_restart_level Ref0000
+S cpct_setVideoMode_asm Ref0000
+S cpct_waitVSYNC_asm Ref0000
+S spikes_rig_anim Ref0000
+S entityman_getEntityArray_IX Ref0000
+S _sp_spikes_up Ref0000
+S animationsys_getSprite Ref0000
+S _level_MT_Studios_UA Ref0000
+S entityman_create_mulitple Ref0000
+S entityman_forall Ref0000
+S entityman_getIX_A Ref0000
+S cpct_akp_musicInit_asm Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_akp_musicPlay_asm Ref0000
+S cpct_drawSolidBox_asm Ref0000
+S _sp_player_0 Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+S _sp_player_1 Ref0000
+S _level_Tomateixon Ref0000
+S _sp_player_2 Ref0000
+S _tiles_00 Ref0000
+S cpct_etm_setDrawTilemap4x8_ag_asm Ref0000
+S cpct_scanKeyboard_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size A9 flags 0 addr 0
+S rendersys_update Def003D
+S rendersys_tilemap Def0071
+S rendersys_drawStringIntro Def0099
+S rendersys_init Def0000
+T 00 00
+R 00 00 00 00
+T 00 00 CD 00 00 0E 00 CD 00 00 21 00 00 11 10 00
+R 00 00 00 00 02 03 3E 00 02 08 33 00 02 0B 2E 00
+T 0E 00 CD 00 00 21 10 00 CD 00 00 CD 71 00 C9
+R 00 00 00 00 02 03 07 00 02 09 0A 00 00 0C 00 00
+T 1B 00
+R 00 00 00 00
+T 1B 00 CD 47 00 DD 4E 00 DD 46 01 CD 6A 00 EB D5
+R 00 00 00 00 00 03 00 00 00 0C 00 00
+T 29 00 CD 00 00 CD 00 00 EB D1 DD 4E 02 DD 46 03
+R 00 00 00 00 02 03 38 00 02 06 01 00
+T 37 00 CD 00 00 F1 E1 E9
+R 00 00 00 00 02 03 14 00
+T 3D 00
+R 00 00 00 00
+T 3D 00 CD 00 00 21 1B 00 CD 00 00 C9
+R 00 00 00 00 02 03 3C 00 00 06 00 00 02 09 3B 00
+T 47 00
+R 00 00 00 00
+T 47 00 DD 7E 00 DD 4E 04 91 4F DD 7E 01 DD 46 05
+R 00 00 00 00
+T 55 00 90 47 CD 6A 00 AF CD 5F 00 C9
+R 00 00 00 00 00 05 00 00 00 09 00 00
+T 5F 00
+R 00 00 00 00
+T 5F 00 EB DD 4E 02 DD 46 03 CD 00 00 C9
+R 00 00 00 00 02 0A 40 00
+T 6A 00
+R 00 00 00 00
+T 6A 00 11 00 C0 CD 00 00 C9
+R 00 00 00 00 02 06 49 00
+T 71 00
+R 00 00 00 00
+T 71 00 21 00 00 11 14 00 01 14 19 CD 00 00 CD
+R 00 00 00 00 02 03 46 00 02 0C 47 00
+T 7E 00 00 00 21 00 C0 CD 00 00 21 0A 01 CD 00 00
+R 00 00 00 00 02 02 17 00 02 08 19 00 02 0E 42 00
+T 8C 00 CD 00 00 21 00 C0 CD 00 00 CD 99 00 C9
+R 00 00 00 00 02 03 2D 00 02 09 0D 00 00 0C 00 00
+T 99 00
+R 00 00 00 00
+T 99 00 21 0A 05 CD 00 00 CD 00 00 21 C0 C3 CD
+R 00 00 00 00 02 06 42 00 02 09 0E 00
+T A6 00 00 00 C9
+R 00 00 00 00 02 02 0D 00

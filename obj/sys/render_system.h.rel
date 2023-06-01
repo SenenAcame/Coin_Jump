@@ -1,0 +1,9 @@
+XL2
+H 1 areas 6 global symbols
+S rendersys_update Ref0000
+S _myDrawStringM0 Ref0000
+S .__.ABS. Def0000
+S rendersys_tilemap Ref0000
+S rendersys_init Ref0000
+S cpct_setDrawCharM0_asm Ref0000
+A _CODE size 0 flags 0 addr 0
